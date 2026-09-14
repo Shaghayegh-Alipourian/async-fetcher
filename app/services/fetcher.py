@@ -228,6 +228,6 @@ class HTTPFetcher:
         )
 
     def _calculate_backoff(self, attempt: int) -> float:
-     """Calculate exponential backoff delay."""
+        """Calculate exponential backoff delay."""
 
-     return float(self._retry_base_delay * (2 ** (attempt - 1)))
+        return float(self._retry_base_delay * (2 ** (attempt - 1)))

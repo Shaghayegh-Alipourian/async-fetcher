@@ -1,12 +1,9 @@
-from typing import cast
-import structlog
-from structlog.stdlib import BoundLogger
-
 import logging
 import sys
-from typing import Any
+from typing import Any, cast
 
 import structlog
+from structlog.stdlib import BoundLogger
 
 
 def configure_logging() -> None:
